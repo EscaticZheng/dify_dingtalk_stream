@@ -22,7 +22,7 @@
 1.先登录开放平台，创建一个机器人应用并发布版本，打开应用详情-凭证与基础信息，复制client_id和client_secret。    
 2.去卡片平台创建卡片，新建模板，选择AI卡片，然后绑定你刚创建的应用。  
 3.模板列表里复制卡片ID，以schema结尾。  
-- dify的API和应用鉴权API-KEY填入至代码第三十四行和第三十六行，卡片ID填进第九十五行。    
+- dify的API和应用鉴权API-KEY。  
 API：如http://10.20.101.126/v1/chat-messages  
 鉴权API-KEY：如app-mrDD7HLYSyEODPgjeTe9NQtp  
 卡片ID：abcdefgh-eb08-49ec-8c76-54dc7575d82d.schema    
@@ -30,4 +30,4 @@ API：如http://10.20.101.126/v1/chat-messages
 运行机器人时，通过命令行参数传入这些凭据：
 
 ```bash
-python main.py --client_id YOUR_APP_KEY --client_secret YOUR_APP_SECRET
+python main.py --client_id ding*********** --client_secret ********* --dify_api http://*.*.*.*/v1/chat-messages --dify_app_key app-******************** --schema ********-****-****-****-*************.schema
